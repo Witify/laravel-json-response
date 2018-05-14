@@ -24,4 +24,5 @@ script:
   - vendor/bin/phpunit --coverage-text --coverage-clover=coverage.clover
 
 after_script:
+  - cp ./build/logs/clover.xml ./clover.xml
   - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
