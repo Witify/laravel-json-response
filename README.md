@@ -1,9 +1,9 @@
 # Quick JSON reponses in Laravel 
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/Witify/laravel-json-response.svg?style=flat-square)](https://packagist.org/packages/spatie/laravel-json-response)
-[![Build Status](https://img.shields.io/travis/Witify/laravel-json-response/master.svg?style=flat-square)](https://travis-ci.org/spatie/laravel-json-response)
-[![Quality Score](https://img.shields.io/scrutinizer/g/Witify/laravel-json-response.svg?style=flat-square)](https://scrutinizer-ci.com/g/spatie/laravel-json-response)
-[![Total Downloads](https://img.shields.io/packagist/dt/Witify/laravel-json-response.svg?style=flat-square)](https://packagist.org/packages/spatie/laravel-json-response)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/Witify/laravel-json-response.svg?style=flat-square)](https://packagist.org/packages/witify/laravel-json-response)
+[![Build Status](https://img.shields.io/travis/Witify/laravel-json-response/master.svg?style=flat-square)](https://travis-ci.org/witify/laravel-json-response)
+[![Quality Score](https://img.shields.io/scrutinizer/g/Witify/laravel-json-response.svg?style=flat-square)](https://scrutinizer-ci.com/g/witify/laravel-json-response)
+[![Total Downloads](https://img.shields.io/packagist/dt/Witify/laravel-json-response.svg?style=flat-square)](https://packagist.org/packages/witify/laravel-json-response)
 
 ## Installation
 
@@ -51,7 +51,7 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ### Security
 
-If you discover any security related issues, please email freek@spatie.be instead of using the issue tracker.
+If you discover any security related issues, please email info@witify.io instead of using the issue tracker.
 
 ## Credits
 
