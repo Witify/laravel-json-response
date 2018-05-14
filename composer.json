@@ -1,22 +1,23 @@
 {
-    "name": "spatie/:package_name",
-    "description": ":package_description",
+    "name": "witify/laravel-json-response",
+    "description": "Quickly make JSON responses in Laravel",
     "keywords": [
-        "spatie",
-        ":package_name"
+        "laravel",
+        "JSON responses"
     ],
-    "homepage": "https://github.com/spatie/:package_name",
+    "homepage": "https://github.com/Witify/laravel-json-response",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": ":author_email",
-            "homepage": "https://spatie.be",
+            "name": "François Lévesque",
+            "email": "francois@witify.io",
+            "homepage": "https://witify.io",
             "role": "Developer"
         }
     ],
     "require": {
-        "php": "^7.1"
+        "php": "^7.1",
+        "laravel/framework": "5.1.*|5.2.*|5.3.*|5.4.*|5.5.*|5.6.*"
     },
     "require-dev": {
         "larapack/dd": "^1.0",
@@ -24,12 +25,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Spatie\\Skeleton\\": "src"
+            "Witify\\LaravelJsonResponse\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Spatie\\Skeleton\\Tests\\": "tests"
+            "Witify\\LaravelJsonResponseTests\\": "tests"
         }
     },
     "scripts": {
@@ -43,10 +44,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Spatie\\Skeleton\\SkeletonServiceProvider"
+                "Witify\\LaravelJsonResponseServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "Spatie\\Skeleton\\SkeletonFacade"
+                "LaravelJsonResponse": "Witify\\LaravelJsonResponseFacade"
             }
         }
     }
