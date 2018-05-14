@@ -1,3 +1,7 @@
+env:
+  global:
+    - CC_TEST_REPORTER_ID=93dd0517330f5052753016ee57ab1bda81783e9b9a537ac95c8fddcdd8921ee9
+
 language: php
 
 php:
@@ -12,9 +16,12 @@ env:
 before_script:
   - travis_retry composer self-update
   - travis_retry composer update ${COMPOSER_FLAGS} --no-interaction --prefer-source
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+  - ./cc-test-reporter before-build
 
 script:
   - vendor/bin/phpunit --coverage-text --coverage-clover=coverage.clover
 
 after_script:
-  - php vendor/bin/ocular code-coverage:upload --format=php-clover coverage.clover
+  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
