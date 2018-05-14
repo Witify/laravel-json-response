@@ -40,15 +40,5 @@
     },
     "config": {
         "sort-packages": true
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Witify\\LaravelJsonResponseServiceProvider"
-            ],
-            "aliases": {
-                "LaravelJsonResponse": "Witify\\LaravelJsonResponseFacade"
-            }
-        }
     }
 }
