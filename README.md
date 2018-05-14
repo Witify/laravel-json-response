@@ -1,11 +1,9 @@
-# Very short description of the package
+# Quick JSON reponses in Laravel 
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/Witify/laravel-json-response.svg?style=flat-square)](https://packagist.org/packages/spatie/laravel-json-response)
 [![Build Status](https://img.shields.io/travis/Witify/laravel-json-response/master.svg?style=flat-square)](https://travis-ci.org/spatie/laravel-json-response)
 [![Quality Score](https://img.shields.io/scrutinizer/g/Witify/laravel-json-response.svg?style=flat-square)](https://scrutinizer-ci.com/g/spatie/laravel-json-response)
 [![Total Downloads](https://img.shields.io/packagist/dt/Witify/laravel-json-response.svg?style=flat-square)](https://packagist.org/packages/spatie/laravel-json-response)
-
-This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what PSRs you support to avoid any confusion with users and contributors.
 
 ## Installation
 
@@ -17,9 +15,25 @@ composer require witify/laravel-json-response
 
 ## Usage
 
+Add it to your controller:
 ``` php
-$json = new Witify\LaravelJsonResponse();
+
+use Witify\LaravelJsonReponse\JsonTrait;
+
+class ApiController extends Controller {
+    use JsonTrait;
+}
 ```
+
+## Available methods
+
+| Method | Description |
+| --- | --- |
+| setStatusCode(int $statusCode) | Set the status code of the response |
+| getStatusCode(int $statusCode) | Get the status code of the response |
+| response($data, $headers = []) | Create a json response |
+| success($message = "", $data = null) | Create a successful json response |
+| error($message = "", $data = null) | Create a failed json response  |
 
 ### Testing
 
